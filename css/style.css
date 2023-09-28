@@ -1,0 +1,79 @@
+p{
+    font-size: 20px;
+    font-weight: 900; 
+}
+
+
+
+span{
+    font-size: 25px;
+}
+
+#mapa {
+width: 300px;
+height: 300px;
+}
+
+.span1{
+    background-color: yellow;
+}
+
+
+span{
+    color:goldenrod;
+}
+
+
+.hijo{
+  list-style: none;
+  border: 1px solid #ccc;
+  margin: 5px;
+  padding: 10px;
+}
+
+.img1{
+    width: 10%;
+    
+}
+
+.divimagen{
+    width: 100%;
+    background-color: #010101;
+}
+
+/*estilo de Mobile */
+@media only screen and (max-width: 767px) {
+  .padre {
+    display: block;
+  }
+  .hijo {
+    width: 100%;
+  }
+}
+  
+/* estilo deTablet */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .padre {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .hijo {
+    width: 40%;
+  }
+}
+  
+/* estilo de Desktop */
+@media only screen and (min-width: 1025px) {
+  .padre {
+    display: flex;
+  }
+  .hijo {
+    width: 25%;
+  }
+}
+
+  footer{
+    display: flex;
+    margin-top: auto;
+    text-align:end;
+  }
