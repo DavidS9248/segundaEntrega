@@ -10,8 +10,9 @@ span{
 }
 
 #mapa {
-width: 300px;
-height: 300px;
+width: 100%;
+height: 200px;
+
 }
 
 .span1{
@@ -23,6 +24,9 @@ span{
     color:goldenrod;
 }
 
+.tittle1{
+  background-color: blue;
+}
 
 .hijo{
   list-style: none;
@@ -42,17 +46,17 @@ span{
 }
 
 /*estilo de Mobile */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 760px) {
   .padre {
     display: block;
   }
   .hijo {
-    width: 100%;
+    width: 80%;
   }
 }
   
-/* estilo deTablet */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+/* estilo de Tablet */
+@media only screen and (min-width: 761px) and (max-width: 1024px) {
   .padre {
     display: flex;
     flex-wrap: wrap;
@@ -72,8 +76,6 @@ span{
   }
 }
 
-  footer{
-    display: flex;
-    margin-top: auto;
-    text-align:end;
-  }
+  
+
+  
