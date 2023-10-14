@@ -35,6 +35,21 @@ span{
   padding: 10px;
 }
 
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.service {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
 .img1{
     width: 10%;
     
@@ -76,6 +91,37 @@ span{
   }
 }
 
-  
+.tech {
+height: 200px;
+}  
 
-  
+#models{
+  background-color: gray;
+}
+
+/*uso del gradiente*/
+#services{
+  background: linear-gradient(white, grey,black);
+}
+#solar{
+  width: 400px;
+  transition: transform 0.3s; /* animacion en la imagen */
+}
+
+#solar:hover {
+  transform: scale(1.1); /* zoom al pasar el mouse*/
+}
+
+@keyframes moveRightToLeft {
+  0% {
+      transform: translateX(0); 
+  }
+  100% {
+      transform: translateX(-50px); /* mover la foto para la derecha*/
+  }
+}
+
+#megapackImage {
+  animation: moveRightToLeft 2s infinite alternate; 
+}
+
